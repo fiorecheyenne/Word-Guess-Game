@@ -1,0 +1,18 @@
+
+ body{
+    background-image: url("images/howl.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+    #word {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+   #lguessed, #remaining, #wins {
+       font-weight: bold; 
+       text-align: left;
+   }
+  
