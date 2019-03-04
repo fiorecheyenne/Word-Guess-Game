@@ -1,18 +1,36 @@
-
- body{
-    background-image: url("images/howl.jpg");
+body, html {
     height: 100%;
+}
+
+ .bg{
+    background-image: url("images/charactermash.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+   height: 100%;
+
+ }
 
     #word {
         font-size: 30px;
         letter-spacing: 4px;
     }
 
-   #lguessed, #remaining, #wins {
+   #lguessed, #remaining, #wins, #lost{
        font-weight: bold; 
        text-align: left;
    }
-  
+#main {
+    opacity: .9;
+    padding: 10px;
+    margin: 10, auto;
+}
+#hintscontain {
+    
+ 
+}
+
+#kan, #cal, #kodama, #tot, #pon, #haku, #howl, #susu, #kamaji, #cat, #ji, #san, #ari, #turn {
+
+ 
+}

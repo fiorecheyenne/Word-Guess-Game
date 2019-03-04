@@ -12,36 +12,120 @@
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3"></div>
+        <div class="bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
 
-                <div class="col-md-6">
-                    <!--<div class="jumbotron">-->
-                    <div class="card">
+                    <div class="col-md-6">
+                        <!--<div class="jumbotron">-->
+                        <div class="card" id="main">
 
-                        <h1 class="text-center">HANGMAN!
-                            <small class="text-muted">Studio Ghibli Style ~</small>
-                        </h1>
+                            <h1 class="text-center">
+                                <small class="text-muted">Studio Ghibli Hangman</small>
+                            </h1>
+                            <!--Start directions-->
+                            <div class="text-center">
+                                <div id="start">Press any key to begin game!</span><br></div>
 
-                        <div class="text-center">
-                            <div id="start">Press any key to begin game!</span><br></div>
+                                <!--Loss Alert-->
+                                <div class="alert alert-danger" role="alert" id="danger" style="display:none">
+                                    Aw, bad guess :(
+                                </div>
 
-                            <div id="word">
+                                <!--Win alert-->
+                                <div class="alert alert-success" role="alert" id="success" style="display:none">
+                                    Nice guess!!
+                                </div>
+
+                                <!--Guessing Word-->
+                                <div id="word">
+                                </div>
+                                <!--Letters Guessed-->
+                                <div id="lguessed">LETTERS GUESSED: <span id="guessedlets"> </span></div>
+                                <!--Guesses remaining-->
+                                <div id="remaining">LIVES LEFT: <span id="lives"> </span></div>
+                                <!--# of wins-->
+                                <div id="wins">WINS: <span id="won"> </span></div>
+                                <!-- # of losses-->
+                                <div id="lost">LOSSES: <span id="losses"> </span></div>
+
+                                <button type="button" class="btn btn-outline-dark" id="hint" onclick="showhint()">Need a
+                                    hint?</button>
                             </div>
-                            <div id="lguessed">LETTERS GUESSED: <span id="guessedlets"> </span></div>
-                            <div id="round"> </div>
-                            <div id="remaining">LIVES LEFT: <span id="lives"> </span></div>
-
-                            <div id="wins">CORRECT GUESSES: <span id="won"> </span></div>
-
                         </div>
-                        <div class="card""><img src=" assets/images/tot.gif"> </div> </div> <div class="col-id-3"></div>
+
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                </divv>
+                <!-- <div class="card""><img src=" assets/images/tot.gif"> </div> </div> <div class="col-id-3">
+                            </div> -->
+                <div class="hintscontain">
+                    <div class="position-relative">
 
 
+                        <div class="row mt-3">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-6">
 
-                        <script src="assets/logic.js"></script>
+                                <div class="text-center">
+                                    <!--kaonashi-->
+                                    <div class="card" id="kan" style="display: none; width: 25rem;">
+                                        <img src="assets/images/kan.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--calcifer-->
+                                    <div class="card" id="cal" style="display: none; width: 18rem;">
+                                        <img src="assets/images/cal.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--totoro-->
+                                    <div class="card" id="tot" style="display: none; width: 18rem;">
+                                        <img src="assets/images/tot.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--Kodama-->
+                                    <div class="card" id="kodama" style="display: none; width: 18rem;">
+                                        <img src="assets/images/kodama.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--Ponyo-->
+                                    <div class="card" id="pon" style="display: none; width: 25rem;">
+                                        <img src="assets/images/pon.gif" class="card-img-top" alt="p"></div>
+                                    <!--Haku-->
+                                    <div class="card" id="haku" style="display: none; width: 18rem;">
+                                        <img src="assets/images/ha.gif" class="card-img-top" alt="p"></div>
+                                    <!--Howl-->
+                                    <div class="card" id="howl" style="display: none; width: 18rem;">
+                                        <img src="assets/images/ho.gif" class="card-img-top" alt="p"></div>
+                                    <!--susu-->
+                                    <div class="card" id="susu" style="display: none; width: 18rem;">
+                                        <img src="assets/images/sus.gif" class="card-img-top" alt="p"></div>
+                                    <!--Kamaji-->
+                                    <div class="card" id="kamaji" style="display: none; width: 18rem;">
+                                        <img src="assets/images/kam.gif" class="card-img-top" alt="p"></div>
+                                    <!--cat-->
+                                    <div class="card" id="cat" style="display: none; width: 18rem;">
+                                        <img src="assets/images/cat.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--jiji-->
+                                    <div class="card" id="ji" style="display: none; width: 18rem;">
+                                        <img src="assets/images/ji.gif" class="card-img-top" alt="p"></div>
 
+                                    <!--San-->
+                                    <div class="card" id="san" style="display: none; width: 18rem;">
+                                        <img src="assets/images/san.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--arrietty-->
+                                    <div class="card" id="ari" style="display: none; width: 18rem;">
+                                        <img src="assets/images/ari.gif" class="card-img-top" alt="p">
+                                    </div>
+                                    <!--Turniphead-->
+                                    <div class="card" id="turn" style="display: none; width: 18rem;">
+                                        <img src="assets/images/turn.gif" class="card-img-top" alt="p">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                            <script src="assets/logic.js"></script>
     </body>
+
 
 </html>
