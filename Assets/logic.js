@@ -240,4 +240,3 @@ function showhint() {
         $('#turn').fadeIn(100);
 }
 
-
