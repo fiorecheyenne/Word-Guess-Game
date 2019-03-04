@@ -129,6 +129,78 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+                            <script>
+                                    //Lost alert
+    if (lives === 0) {
+        $('#danger').fadeIn(100);
+        setTimeout(function () {
+            $('#danger').fadeOut(100);
+        }, 900);
+        // alert("You lost :(");
+        losses++;
+        resetGame();
+
+    }
+};
+
+function checkWin() {
+    if (guessingWrd.indexOf("_") === -1) {
+        wins++;
+        $('#success').fadeIn(100);
+        setTimeout(function () {
+            $('#success').fadeOut(100);
+        }, 900);
+        //  alert("Nice guess!");
+        resetGame();
+    }
+};
+
+function showhint() {
+    var hint = document.getElementById('hint');
+    if (wordIndex === 4) {
+        $('#pon').fadeIn(100);
+    }
+    else {
+        if (wordIndex === 0)
+            $('#kan').fadeIn(100);
+    }
+    if
+        (wordIndex === 1)
+        $('#cal').fadeIn(100);
+
+    if (wordIndex === 3)
+        $('#kodama').fadeIn(100);
+
+    if (wordIndex === 2)
+        $('#tot').fadeIn(100);
+
+    if (wordIndex === 5)
+        $('#haku').fadeIn(100);
+
+    if (wordIndex === 6)
+        $('#howl').fadeIn(100);
+
+    if (wordIndex === 7) 
+        $('#susu').fadeIn(100);
+
+    if (wordIndex === 8)
+        $('#kamaji').fadeIn(100);
+
+    if (wordIndex === 9)
+        $('#cat').fadeIn(100);
+
+    if (wordIndex === 10)
+        $('#ji').fadeIn(100);
+
+    if (wordIndex === 11)
+        $('#san').fadeIn(100);
+
+    if (wordIndex === 12)
+        $('#ari').fadeIn(100);
+
+    if (wordIndex === 13)
+        $('#turn').fadeIn(100);
+}</script>
     </body>
 
 </html>
