@@ -218,7 +218,7 @@ function showhint() {
     if (wordIndex === 6)
         $('#howl').fadeIn(100);
 
-    if (wordIndex === 7)
+    if (wordIndex === 7) 
         $('#susu').fadeIn(100);
 
     if (wordIndex === 8)
