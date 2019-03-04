@@ -91,33 +91,33 @@ function resetGame() {
 
     //hide given hint
 
-    document.getElementById("pon").style.display =
+    document.getElementById("pon").style.display=
         "none";
-    document.getElementById("kan").style.display =
+    document.getElementById("kan").style.display=
         "none";
-    document.getElementById("cal").style.display =
+    document.getElementById("cal").style.display=
         "none";
-    document.getElementById("kodama").style.display =
+    document.getElementById("kodama").style.display=
         "none";
-    document.getElementById("tot").style.display =
+    document.getElementById("tot").style.display=
         "none";
-    document.getElementById("haku").style.display =
+    document.getElementById("haku").style.display=
         "none";
-    document.getElementById("howl").style.display =
+    document.getElementById("howl").style.display=
         "none";
-    document.getElementById("susu").style.display =
+    document.getElementById("susu").style.display=
         "none";
-    document.getElementById("kamaji").style.display =
+    document.getElementById("kamaji").style.display=
         "none";
-    document.getElementById("cat").style.display =
+    document.getElementById("cat").style.display=
         "none";
-    document.getElementById("ji").style.display =
+    document.getElementById("ji").style.display=
         "none";
-    document.getElementById("san").style.display =
+    document.getElementById("san").style.display=
         "none";
-    document.getElementById("ari").style.display =
+    document.getElementById("ari").style.display=
         "none";
-    document.getElementById("turn").style.display =
+    document.getElementById("turn").style.display=
         "none";
     // document.getElementById("hints").style.display = "none";
 
